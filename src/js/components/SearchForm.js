@@ -22,7 +22,6 @@ class SearchForm extends Component {
 
   handleChange(evt) {
     this.setState( { [evt.target.name]: evt.target.value});
-    console.log( { [evt.target.name]: evt.target.value});
   }
 
 // checkin
@@ -30,7 +29,6 @@ class SearchForm extends Component {
     this.setState({
       checkin: date,
     });
-    console.log(date.date);
 
   }
 //checkout
