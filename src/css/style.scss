@@ -1,0 +1,29 @@
+@import '~bootstrap/scss/bootstrap.scss';
+$red: #FF3333;
+body {
+  font-family: sans-serif;
+}
+
+.search-form {
+  margin: 20px;
+}
+
+.searchForm-panel {
+  background-color: #EEEEEE;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.title-s {
+  text-align: center;
+  padding: 10px;
+}
+
+.btn-wrapper {
+  text-align: center;
+}
