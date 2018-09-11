@@ -11,8 +11,8 @@ class SearchForm extends Component {
 
     this.state = {
       destination: '',
-      checkin: moment(),
-      checkout: moment()
+      checkin: '',
+      checkout: ''
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleStartDateChange = this.handleStartDateChange.bind(this);
@@ -22,6 +22,7 @@ class SearchForm extends Component {
 
   handleChange(evt) {
     this.setState( { [evt.target.name]: evt.target.value});
+
   }
 
 // checkin
@@ -29,6 +30,7 @@ class SearchForm extends Component {
     this.setState({
       checkin: date,
     });
+    console.log(date.date);
 
   }
 //checkout
@@ -57,14 +59,14 @@ class SearchForm extends Component {
           </div>
           <div className="form-group">
             <DatePicker selected={this.state.checkin}
-              placeholder="チェックイン"
+              placeholderText="チェックイン"
               className="form-control"
               name="checkin"
               onChange={this.handleStartDateChange} />
           </div>
           <div className="form-group">
             <DatePicker selected={this.state.checkout}
-              placeholder="チェックアウト"
+              placeholderText="チェックアウト"
               className="form-control"
               name="checkout"
               onChange={this.handleEndDateChange} />
