@@ -52,18 +52,21 @@ class SearchForm extends Component {
         <form onSubmit={this.handleSubmit}>
           <div className="form-group">
             <input type="text"
+              placeholder="地名を入力"
               className="form-control"
               name="destination"
               onChange={this.handleChange} />
           </div>
           <div className="form-group">
             <DatePicker selected={this.state.checkin}
+              placeholder="チェックイン"
               className="form-control"
               name="checkin"
               onChange={this.handleStartDateChange} />
           </div>
           <div className="form-group">
             <DatePicker selected={this.state.checkout}
+              placeholder="チェックアウト"
               className="form-control"
               name="checkout"
               onChange={this.handleEndDateChange} />
